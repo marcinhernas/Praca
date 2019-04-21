@@ -490,6 +490,24 @@ section.sec1 {
 
 /*---------------------------------------------------------- I N D E X ----------------------------------------------------------*/
 
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+  position: fixed;
+  z-index: 50;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #4caf50;
+  width: 0%;
+  position: fixed;
+  z-index: 50;
+}
+
+
+
 .navigation{
 	position: fixed;
 	bottom: 0;
