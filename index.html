@@ -63,6 +63,30 @@
 				<li><a href="#block-six" class="navigation-link6"></a></li>
 			</ul>
 		</div>
+		<script>
+		window.onscroll = function() {myFunction()};
+		function myFunction() {
+			var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+			var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+			var scrolled = (winScroll / height) * 100;
+			document.getElementById("myBar").style.width = scrolled + "%";
+			console.log(scrolled);
+			if(scrolled<10.20){
+				console.log("sekcja1");
+				document.getElementById('navigation-link1').style.background = "red";
+				document.getElementById('navigation-link2').style.background = "white";
+				document.getElementById('navigation-link3').style.background = "white";
+				document.getElementById('navigation-link4').style.background = "white";
+				document.getElementById('navigation-link5').style.background = "white";
+				document.getElementById('navigation-link6').style.background = "white";
+			}
+			if(scrolled>10.20 && scrolled<30.41){
+				console.log("sekcja2");
+
+			}
+			else{};	
+		}
+		</script>
 		<div id="container">
 			<div id="block-one">
 				<main class="one-grid">
